@@ -1,6 +1,6 @@
 {
   "name": "joyce-secret-base",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "private": true,
   "author": "Acornus <acornus2022@gmail.com>",
   "dependencies": {

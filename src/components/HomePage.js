@@ -17,15 +17,14 @@ const HomePage = () => {
 		<>
 			<div >
 				<Container text>
-					<h1>Joyce!</h1>
-					<h4>Riddle</h4>
+					<h1>Riddle</h1>
 					<Container text>
 						<p>A bundle of <span style={{ color: "red" }}>Blubber</span></p>
 						<p>a sight for <span style={{ color: "orange" }}>Landlubbers</span></p>
-						<p>I wave with a slap-happy <span style={{ color: "yellow" }}>Tail</span></p>
+						<p>I wave with a slap-happy <span style={{ color: "purple" }}>Tail</span></p>
 						<p>A saltwater  <span style={{ color: "blue" }}>Fountain</span></p>
 						<p>just sprayin' and <span style={{ color: "green" }}>spoutin' </span></p>
-						<p>look out! Thar I blow! I'm a ...</p>
+						<p>look out! Thar I blow! <span style={{ color: "yellow" }}>I'm a ...</span> </p>
 					</Container>
 					<Container>
 						<Hint />
