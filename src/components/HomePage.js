@@ -6,6 +6,8 @@ import myImage from '../images/whale3.jpg';
 import whaleVideo from "../video/whaleVideo.mp4";
 import whaleSong from '../sound/whaleSong.wav';
 import SlideShow from './SlideShow';
+import NewMenu from './NewMenu';
+import BombMenu from './BombMenu';
 import Hint from './Hint';
 
 const HomePage = () => {
@@ -16,6 +18,7 @@ const HomePage = () => {
 	return (
 		<>
 			<div >
+				<NewMenu />
 				<Container text>
 					<h1>Riddle</h1>
 					<Container text>
@@ -24,7 +27,7 @@ const HomePage = () => {
 						<p>I wave with a slap-happy <span style={{ color: "purple" }}>Tail</span></p>
 						<p>A saltwater  <span style={{ color: "blue" }}>Fountain</span></p>
 						<p>just sprayin' and <span style={{ color: "green" }}>spoutin' </span></p>
-						<p>look out! Thar I blow! <span style={{ color: "yellow" }}>I'm a ...</span> </p>
+						<p>look out! Far I blow! <span style={{ color: "yellow" }}>I'm a ...</span> </p>
 					</Container>
 					<Container>
 						<Hint />
