@@ -6,9 +6,9 @@ import Riddle from './Riddle';
 import JoyceBomb from './JoyceBomb';
 
 export default class HomePage extends Component {
-	state = { activeItem: 'gamepad' };
+	state = { activeItem: 'riddle' };
 
-	handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+	handleItemClick = (name) => this.setState({ activeItem: name });
 
 	render() {
 		const { activeItem } = this.state;
@@ -19,8 +19,8 @@ export default class HomePage extends Component {
 					<Menu.Item
 						name='riddle'
 						color={'purple'}
-						active={activeItem === 'riddle'}
-						onClick={this.handleItemClick}>
+						active={this.state.activeItem === 'riddle'}
+						onClick={() => this.handleItemClick('riddle')}>
 						<Icon name='magic' />
 						Riddles
 					</Menu.Item>
@@ -28,14 +28,14 @@ export default class HomePage extends Component {
 					<Menu.Item
 						color={'red'}
 						name='bomb'
-						active={activeItem === 'bomb'}
-						onClick={this.handleItemClick}>
+						active={this.state.activeItem === 'bomb'}
+						onClick={() => this.handleItemClick('bomb')}>
 						<Icon name='bomb' />
 						Bomb Timer
 					</Menu.Item>
 				</Menu>
-				<Riddle />
-				<JoyceBomb />
+				{this.state.activeItem === 'riddle' && <Riddle />}
+				{this.state.activeItem === 'bomb' && <JoyceBomb />}
 			</>
 		);
 	}

@@ -2,12 +2,14 @@
 
 import React from 'react';
 import { Container, Image } from 'semantic-ui-react';
-import myImage from '../images/bomb3.webp';
+import bomb3 from '../images/bomb3.webp';
+import bomb4 from '../images/bomb4.png';
 
 const JoyceBomb = () => {
 	return (
 		<Container>
-			<Image src={myImage} fluid />
+			<Image src={bomb3} fluid />
+			<Image src={bomb4} fluid />
 		</Container>
 	);
 };
