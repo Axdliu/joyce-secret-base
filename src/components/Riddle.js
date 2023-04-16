@@ -6,11 +6,10 @@ import myImage from '../images/whale3.jpg';
 import whaleVideo from "../video/whaleVideo.mp4";
 import whaleSong from '../sound/whaleSong.wav';
 import SlideShow from './SlideShow';
-import NewMenu from './NewMenu';
 import BombMenu from './BombMenu';
 import Hint from './Hint';
 
-const HomePage = () => {
+const Riddle = () => {
 	const [showAnswer, setShowAnswer] = useState(false);
 	const [showHint, setShowHint] = useState(false);
 	const [playSound, setPlaySound] = useState(false);
@@ -18,7 +17,6 @@ const HomePage = () => {
 	return (
 		<>
 			<div >
-				<NewMenu />
 				<Container text>
 					<h1>Riddle</h1>
 					<Container text>
@@ -61,4 +59,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default Riddle;
