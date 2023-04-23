@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { Icon, Menu } from 'semantic-ui-react';
 import Riddle from './Riddle';
 import JoyceBomb from './JoyceBomb';
+import JoyceBook from './JoyceBook';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -33,9 +34,19 @@ export default class HomePage extends Component {
 						<Icon name='bomb' />
 						Bomb Timer
 					</Menu.Item>
+
+					<Menu.Item
+						color={'green'}
+						name='book'
+						active={this.state.activeItem === 'book'}
+						onClick={() => this.handleItemClick('book')}>
+						<Icon name='book' />
+						Book
+					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
+				{this.state.activeItem === 'book' && <JoyceBook />}
 			</>
 		);
 	}
