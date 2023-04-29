@@ -8,7 +8,13 @@ const TheShadow = () => {
 		<Message>
 			<Message.Header>The Shadow</Message.Header>
 			<h4>Written,illustrated By Joyce Yang</h4>
-			<div style={{ textAlign: 'left', marginTop: '1em' }}>
+			<div
+				style={{
+					textAlign: 'left',
+					marginTop: '1em',
+					height: '450px',
+					overflowY: 'scroll',
+				}}>
 				<p>
 					In a small village near the rivers,there lived a girl and her name was
 					Lavinda.She was from Europe,France.She has purple eyes,blond hair and

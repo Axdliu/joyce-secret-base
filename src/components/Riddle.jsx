@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from 'react';
-import { Container, Button, Image, Embed } from 'semantic-ui-react';
+import { Container, Button } from 'semantic-ui-react';
 import myImage from '../images/whale3.jpg';
 import whaleVideo from "../video/whaleVideo.mp4";
 import whaleSong from '../sound/whaleSong.wav';
