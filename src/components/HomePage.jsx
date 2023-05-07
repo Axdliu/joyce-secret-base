@@ -36,12 +36,21 @@ export default class HomePage extends Component {
 					</Menu.Item>
 
 					<Menu.Item
-						color={'green'}
+						color={'teal'}
 						name='book'
 						active={this.state.activeItem === 'book'}
 						onClick={() => this.handleItemClick('book')}>
 						<Icon name='book' />
 						Book
+					</Menu.Item>
+
+					<Menu.Item
+						color={'green'}
+						name='would'
+						active={this.state.activeItem === 'would'}
+						onClick={() => this.handleItemClick('would')}>
+						<Icon name='bug' />
+						Would you rather
 					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
