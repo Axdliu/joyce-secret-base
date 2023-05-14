@@ -5,6 +5,7 @@ import { Icon, Menu } from 'semantic-ui-react';
 import Riddle from './Riddle';
 import JoyceBomb from './JoyceBomb';
 import JoyceBook from './JoyceBook';
+import WouldYouRather from './WouldYouRather';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -52,10 +53,20 @@ export default class HomePage extends Component {
 						<Icon name='bug' />
 						Would you rather
 					</Menu.Item>
+
+					<Menu.Item
+						color={'yellow'}
+						name='food'
+						active={this.state.activeItem === 'food'}
+						onClick={() => this.handleItemClick('food')}>
+						<Icon name='food' />
+						Food
+					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
 				{this.state.activeItem === 'book' && <JoyceBook />}
+				{this.state.activeItem === 'would' && <WouldYouRather />}
 			</>
 		);
 	}
