@@ -9,6 +9,21 @@ const questions = [
     ["be 1 year old forever", "be 100 years old forever"],
     ["be able to see the future", "fly"],
     ["breath under water", "be able to live In the space forever without oxygen"],
+    ["read 100 thick books", "1000 thin book"],
+    ["Sleep with a vampire", "play with a zombie"],
+    ["Have a pet alligator", "wolf"],
+    ["Eat doughnut", "chocolate cake"],
+    ["Draw something worth $100000", "go on World record"],
+    ["become famous", "be very talented"],
+    ["read a cooking book or a history book"],
+    ["would you rather make slime", "become famous would you rather"],
+    ["Would you rather become famous", "live a peaceful life"],
+    ["live in a castle", "in a mansion."],
+    ["make friend with a giant", "have no friends."],
+    ["Get an A + in art", "get a b -  for English."],
+    ["Get famous", "live in a mansion"],
+    ["Get a iPhone 15", "win $10000"],
+    ["catch a rare butterfly", "catch a bird"],
 ]
 
 export default questions

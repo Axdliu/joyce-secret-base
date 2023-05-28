@@ -6,6 +6,7 @@ import Riddle from './Riddle';
 import JoyceBomb from './JoyceBomb';
 import JoyceBook from './JoyceBook';
 import WouldYouRather from './WouldYouRather';
+import FoodDrop from './FoodDrop';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -67,6 +68,7 @@ export default class HomePage extends Component {
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
 				{this.state.activeItem === 'book' && <JoyceBook />}
 				{this.state.activeItem === 'would' && <WouldYouRather />}
+				{this.state.activeItem === 'food' && <FoodDrop />}
 			</>
 		);
 	}
