@@ -7,6 +7,7 @@ import JoyceBomb from './JoyceBomb';
 import JoyceBook from './JoyceBook';
 import WouldYouRather from './WouldYouRather';
 import FoodDrop from './FoodDrop';
+import Emoji from './Emoji';
 import parrot from '../images/parrot.gif';
 
 export default class HomePage extends Component {
@@ -67,9 +68,9 @@ export default class HomePage extends Component {
 
 					<Menu.Item
 						color={'pink'}
-						name='joke'
-						active={this.state.activeItem === 'joke'}
-						onClick={() => this.handleItemClick('joke')}>
+						name='emoji'
+						active={this.state.activeItem === 'emoji'}
+						onClick={() => this.handleItemClick('emoji')}>
 						{/* <Icon name='smile outline' /> */}
 						<img
 							style={{ paddingBottom: '5px' }}
@@ -84,7 +85,7 @@ export default class HomePage extends Component {
 				{this.state.activeItem === 'book' && <JoyceBook />}
 				{this.state.activeItem === 'would' && <WouldYouRather />}
 				{this.state.activeItem === 'food' && <FoodDrop />}
-				{this.state.activeItem === 'joke' && <div />}
+				{this.state.activeItem === 'emoji' && <Emoji />}
 			</>
 		);
 	}
