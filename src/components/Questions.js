@@ -24,6 +24,11 @@ const questions = [
     ["Get famous", "live in a mansion"],
     ["Get a iPhone 15", "win $10000"],
     ["catch a rare butterfly", "catch a bird"],
+    ["Eat a shark", "sleep with a shark"],
+    ["Swim with Mermaid", "fly with a Unicorn"],
+    ["Watch TV", "play video games"],
+    ["Play violin", "play piano"],
+    ["Have a best friend", "have a good ice cream"]
 ]
 
 export default questions

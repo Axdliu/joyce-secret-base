@@ -5,6 +5,8 @@
   "author": "Acornus <acornus2022@gmail.com>",
   "dependencies": {
     "@babel/core": "7.9.0",
+    "@emoji-mart/data": "^1.1.2",
+    "@emoji-mart/react": "^1.1.1",
     "@jaredreisinger/react-crossword": "^2.3.1",
     "@okta/okta-react": "^3.0.7",
     "@svgr/webpack": "4.3.3",
@@ -27,6 +29,7 @@
     "daypilot-pro-react": "https://npm.daypilot.org/daypilot-pro-react/trial/2020.4.4766.tar.gz",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
+    "emoji-mart": "^5.5.2",
     "eslint": "^7.11.0",
     "eslint-config-react-app": "^5.2.1",
     "eslint-loader": "3.0.3",

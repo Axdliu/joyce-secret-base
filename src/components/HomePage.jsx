@@ -7,6 +7,7 @@ import JoyceBomb from './JoyceBomb';
 import JoyceBook from './JoyceBook';
 import WouldYouRather from './WouldYouRather';
 import FoodDrop from './FoodDrop';
+import parrot from '../images/parrot.gif';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -63,12 +64,27 @@ export default class HomePage extends Component {
 						<Icon name='food' />
 						Food
 					</Menu.Item>
+
+					<Menu.Item
+						color={'pink'}
+						name='joke'
+						active={this.state.activeItem === 'joke'}
+						onClick={() => this.handleItemClick('joke')}>
+						{/* <Icon name='smile outline' /> */}
+						<img
+							style={{ paddingBottom: '5px' }}
+							src={parrot}
+							alt='loading...'
+						/>
+						Emoji
+					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
 				{this.state.activeItem === 'book' && <JoyceBook />}
 				{this.state.activeItem === 'would' && <WouldYouRather />}
 				{this.state.activeItem === 'food' && <FoodDrop />}
+				{this.state.activeItem === 'joke' && <div />}
 			</>
 		);
 	}
