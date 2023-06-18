@@ -71,12 +71,7 @@ export default class HomePage extends Component {
 						name='emoji'
 						active={this.state.activeItem === 'emoji'}
 						onClick={() => this.handleItemClick('emoji')}>
-						{/* <Icon name='smile outline' /> */}
-						<img
-							style={{ paddingBottom: '5px' }}
-							src={parrot}
-							alt='loading...'
-						/>
+						<Icon name='smile outline' />
 						Emoji
 					</Menu.Item>
 				</Menu>
