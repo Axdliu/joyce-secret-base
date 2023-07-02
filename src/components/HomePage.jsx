@@ -8,7 +8,7 @@ import JoyceBook from './JoyceBook';
 import WouldYouRather from './WouldYouRather';
 import FoodDrop from './FoodDrop';
 import Emoji from './Emoji';
-import parrot from '../images/parrot.gif';
+import DrawingPad from './DrawingPad';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -74,6 +74,15 @@ export default class HomePage extends Component {
 						<Icon name='smile outline' />
 						Emoji
 					</Menu.Item>
+
+					<Menu.Item
+						color={'brown'}
+						name='canvas'
+						active={this.state.activeItem === 'canvas'}
+						onClick={() => this.handleItemClick('canvas')}>
+						<Icon name='file alternate outline' />
+						Drawing Pad
+					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
@@ -81,6 +90,7 @@ export default class HomePage extends Component {
 				{this.state.activeItem === 'would' && <WouldYouRather />}
 				{this.state.activeItem === 'food' && <FoodDrop />}
 				{this.state.activeItem === 'emoji' && <Emoji />}
+				{this.state.activeItem === 'canvas' && <DrawingPad />}
 			</>
 		);
 	}
