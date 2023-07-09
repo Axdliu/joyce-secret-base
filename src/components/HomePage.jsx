@@ -9,6 +9,7 @@ import WouldYouRather from './WouldYouRather';
 import FoodDrop from './FoodDrop';
 import Emoji from './Emoji';
 import DrawingPad from './DrawingPad';
+import WorldMap from './WorldMap';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -54,7 +55,7 @@ export default class HomePage extends Component {
 						active={this.state.activeItem === 'would'}
 						onClick={() => this.handleItemClick('would')}>
 						<Icon name='bug' />
-						Would you rather
+						Would you
 					</Menu.Item>
 
 					<Menu.Item
@@ -83,6 +84,15 @@ export default class HomePage extends Component {
 						<Icon name='file alternate outline' />
 						Drawing Pad
 					</Menu.Item>
+
+					<Menu.Item
+						color={'orange'}
+						name='map'
+						active={this.state.activeItem === 'map'}
+						onClick={() => this.handleItemClick('map')}>
+						<Icon name='map marker alternate' />
+						Map
+					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
 				{this.state.activeItem === 'bomb' && <JoyceBomb />}
@@ -91,6 +101,7 @@ export default class HomePage extends Component {
 				{this.state.activeItem === 'food' && <FoodDrop />}
 				{this.state.activeItem === 'emoji' && <Emoji />}
 				{this.state.activeItem === 'canvas' && <DrawingPad />}
+				{this.state.activeItem === 'map' && <WorldMap />}
 			</>
 		);
 	}
