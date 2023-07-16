@@ -10,6 +10,7 @@ import FoodDrop from './FoodDrop';
 import Emoji from './Emoji';
 import DrawingPad from './DrawingPad';
 import WorldMap from './WorldMap';
+import Funny from './Funny';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -21,7 +22,7 @@ export default class HomePage extends Component {
 
 		return (
 			<>
-				<Menu icon='labeled'>
+				<Menu icon='labeled' widths={8}>
 					<Menu.Item
 						name='riddle'
 						color={'purple'}
@@ -85,13 +86,22 @@ export default class HomePage extends Component {
 						Drawing Pad
 					</Menu.Item>
 
-					<Menu.Item
+					{/* <Menu.Item
 						color={'orange'}
 						name='map'
 						active={this.state.activeItem === 'map'}
 						onClick={() => this.handleItemClick('map')}>
 						<Icon name='map marker alternate' />
 						Map
+					</Menu.Item> */}
+
+					<Menu.Item
+						color={'orange'}
+						name='funny'
+						active={this.state.activeItem === 'funny'}
+						onClick={() => this.handleItemClick('funny')}>
+						<Icon name='like' />
+						Funny
 					</Menu.Item>
 				</Menu>
 				{this.state.activeItem === 'riddle' && <Riddle />}
@@ -101,7 +111,8 @@ export default class HomePage extends Component {
 				{this.state.activeItem === 'food' && <FoodDrop />}
 				{this.state.activeItem === 'emoji' && <Emoji />}
 				{this.state.activeItem === 'canvas' && <DrawingPad />}
-				{this.state.activeItem === 'map' && <WorldMap />}
+				{/* {this.state.activeItem === 'map' && <WorldMap />} */}
+				{this.state.activeItem === 'funny' && <Funny />}
 			</>
 		);
 	}

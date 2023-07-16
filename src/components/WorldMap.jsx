@@ -14,7 +14,7 @@ const WorldMap = () => {
 					<Geographies geography={geoUrl}>
 						{({ geographies }) =>
 							geographies.map((geo) => (
-								<Geography key={geo.rsmKey} geography={geo} />
+								<Geography key={geo.rsmKey} geography={geo} fill={'#F6F0E9'} />
 							))
 						}
 					</Geographies>
