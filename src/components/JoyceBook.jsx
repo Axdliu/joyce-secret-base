@@ -18,6 +18,7 @@ import magicalBook from '../images/MagicalBook.png';
 import mia from '../images/mia.png';
 import { Container, Image, Grid, Header } from 'semantic-ui-react';
 import Whiskers from './books/Whiskers';
+import MagicalBook from './books/MagicalBook';
 
 const JoyceBook = () => {
 	const [showBook, setShowBook] = useState(false);
@@ -37,15 +38,15 @@ const JoyceBook = () => {
 					maxWidth: '110%',
 					width: '120%',
 					height: 'auto;',
-					marginLeft: '-2em',
+					marginLeft: '3em',
 				}}>
 				<Image fluid src={bookshelf} />
 			</div>
-			<div style={{ marginTop: '-65em' }}>
+			<div style={{ marginTop: '-57em', marginLeft: '6em' }}>
 				<Container>
 					<Grid celled>
 						<Grid.Row>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={theShadow}
 									onClick={() => {
@@ -56,11 +57,12 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(false);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>The Shadow</Header>
 							</Grid.Column>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={flirdTheBird}
 									onClick={() => {
@@ -71,11 +73,12 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(false);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>Flird The Bird</Header>
 							</Grid.Column>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={elves}
 									onClick={() => {
@@ -86,11 +89,12 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(false);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>The Elves</Header>
 							</Grid.Column>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={mia}
 									onClick={() => {
@@ -101,11 +105,14 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(false);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>Mia and the Treacherous Adventure</Header>
 							</Grid.Column>
-							<Grid.Column width={3}>
+						</Grid.Row>
+						<Grid.Row style={{ marginTop: '2em' }}>
+							<Grid.Column width={4}>
 								<Image
 									src={enchanced}
 									onClick={() => {
@@ -116,13 +123,12 @@ const JoyceBook = () => {
 										setShowBook5(true);
 										setShowBook6(false);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>The Enchanted Forest Adventure</Header>
 							</Grid.Column>
-						</Grid.Row>
-						<Grid.Row style={{ marginTop: '2em' }}>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={candyLand}
 									onClick={() => {
@@ -133,11 +139,12 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(true);
 										setShowBook7(false);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>Candy Land</Header>
 							</Grid.Column>
-							<Grid.Column width={3}>
+							<Grid.Column width={4}>
 								<Image
 									src={whiskers}
 									onClick={() => {
@@ -148,10 +155,29 @@ const JoyceBook = () => {
 										setShowBook5(false);
 										setShowBook6(false);
 										setShowBook7(true);
+										setShowBook8(false);
 									}}
 								/>
 								<Header as='h4'>Whiskers</Header>
 							</Grid.Column>
+							<Grid.Column width={4}>
+								<Image
+									src={magicalBook}
+									onClick={() => {
+										setShowBook3(false);
+										setShowBook(false);
+										setShowBook2(false);
+										setShowBook4(false);
+										setShowBook5(false);
+										setShowBook6(false);
+										setShowBook7(false);
+										setShowBook8(true);
+									}}
+								/>
+								<Header as='h4'>Magical Book</Header>
+							</Grid.Column>
+							<Grid.Column width={3}></Grid.Column>
+							<Grid.Column width={3}></Grid.Column>
 						</Grid.Row>
 					</Grid>
 				</Container>
@@ -162,6 +188,7 @@ const JoyceBook = () => {
 				{showBook5 && <Enchanced />}
 				{showBook6 && <CandyLand />}
 				{showBook7 && <Whiskers />}
+				{showBook8 && <MagicalBook />}
 			</div>
 		</div>
 	);

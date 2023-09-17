@@ -19,7 +19,13 @@ const JoyceBomb = () => {
 			{explode2 && <Explosion2 />}
 			{!explode && (
 				<Container>
-					<div style={{ marginTop: '7em', zIndex: 999, position: 'relative' }}>
+					<div
+						style={{
+							marginTop: '9em',
+							marginLeft: '12em',
+							zIndex: 999,
+							position: 'relative',
+						}}>
 						{timer && (
 							<Header as='h1'>
 								<Countdown
@@ -42,7 +48,13 @@ const JoyceBomb = () => {
 						)}
 					</div>
 
-					<div style={{ marginTop: '-7em', zIndex: 1, position: 'relative' }}>
+					<div
+						style={{
+							marginTop: '-8em',
+							marginLeft: '4em',
+							zIndex: 1,
+							position: 'relative',
+						}}>
 						<Image src={bomb3} />
 					</div>
 				</Container>

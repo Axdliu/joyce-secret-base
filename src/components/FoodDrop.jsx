@@ -30,7 +30,7 @@ import doll from '../images/doll.png';
 
 const App = () => {
 	const [food, setFood] = useState(n1);
-	const [position, setPosition] = useState({ left: 600, top: 0 });
+	const [position, setPosition] = useState({ left: 300, top: 0 });
 	// const imageList = [m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12];
 	const imageList = [
 		n1,
@@ -112,22 +112,22 @@ const App = () => {
 		}
 		if (
 			food !== null &&
-			position.top >= 360 &&
-			position.top <= 410 &&
-			position.left >= 630 &&
-			position.left <= 700
+			position.top >= 400 &&
+			position.top <= 800 &&
+			position.left >= 250 &&
+			position.left <= 350
 		) {
 			setFood(null);
 		}
 	}, [food, position]);
 
 	return (
-		<div>
+		<>
 			<div
 				style={{
 					position: 'absolute',
-					top: `300px`,
-					left: `600px`,
+					top: `400px`,
+					left: `300px`,
 					maxWidth: '15%',
 					height: 'auto',
 				}}>
@@ -142,7 +142,7 @@ const App = () => {
 				}}>
 				{food && <Image src={food} />}
 			</div>
-		</div>
+		</>
 	);
 };
 

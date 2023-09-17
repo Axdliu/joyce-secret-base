@@ -117,18 +117,18 @@ export default class HomePage extends Component {
 						</Menu>
 					</Grid.Column>
 					<Grid.Column stretched width={14}>
-						<Segment>
-							{this.state.activeItem === 'riddle' && <Riddle />}
-							{this.state.activeItem === 'bomb' && <JoyceBomb />}
-							{this.state.activeItem === 'book' && <JoyceBook />}
-							{this.state.activeItem === 'would' && <WouldYouRather />}
-							{this.state.activeItem === 'food' && <FoodDrop />}
-							{this.state.activeItem === 'emoji' && <Emoji />}
-							{this.state.activeItem === 'canvas' && <DrawingPad />}
-							{/* {this.state.activeItem === 'map' && <WorldMap />} */}
-							{this.state.activeItem === 'funny' && <Funny />}
-							{this.state.activeItem === 'trick' && <Trick />}
-						</Segment>
+						{/* <Segment> */}
+						{this.state.activeItem === 'riddle' && <Riddle />}
+						{this.state.activeItem === 'bomb' && <JoyceBomb />}
+						{this.state.activeItem === 'book' && <JoyceBook />}
+						{this.state.activeItem === 'would' && <WouldYouRather />}
+						{this.state.activeItem === 'food' && <FoodDrop />}
+						{this.state.activeItem === 'emoji' && <Emoji />}
+						{this.state.activeItem === 'canvas' && <DrawingPad />}
+						{/* {this.state.activeItem === 'map' && <WorldMap />} */}
+						{this.state.activeItem === 'funny' && <Funny />}
+						{this.state.activeItem === 'trick' && <Trick />}
+						{/* </Segment> */}
 					</Grid.Column>
 				</Grid>
 			</>

@@ -24,11 +24,35 @@ const Emoji = () => {
 						}>
 						Click Me!
 					</Button>
-					<Button size='medium'>Click Me!</Button>
-					<Button size='large'>Click Me!</Button>
-					<Button size='big'>Click Me!</Button>
-					<Button size='huge'>Click Me!</Button>
-					<Button size='massive'>Click Me!</Button>
+					<Button
+						size='medium'
+						onClick={() =>
+							window.alert('You got controlled by the evil genius!')
+						}>
+						Click Me!
+					</Button>
+					<Button
+						size='large'
+						onClick={() => window.alert('The evil genius hacked your friend!')}>
+						Click Me!
+					</Button>
+					<Button
+						size='big'
+						onClick={() => window.alert('Computer shut down!')}>
+						Click Me!
+					</Button>
+					<Button size='huge' onClick={() => window.alert('ERROR! ERROR!')}>
+						Click Me!
+					</Button>
+					<Button
+						size='massive'
+						onClick={() =>
+							window.alert(
+								'Computer refresh! Oops deleted everything but homework! Yay!'
+							)
+						}>
+						Click Me!
+					</Button>
 				</div>
 			</Segment>
 		</Segment.Group>
