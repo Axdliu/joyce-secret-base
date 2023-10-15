@@ -3,29 +3,23 @@
 import React, { Component } from 'react';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ImageGallery from 'react-image-gallery';
-// https://im.ge/upload/?lang=en
+import whale1 from '../images/whale/whale1.jpg';
+import whale2 from '../images/whale/whale2.jpg';
+import whale3 from '../images/whale/whale3.jpg';
 class SlideShow extends Component {
 	render() {
 		const images = [
 			{
-				original: 'https://i.328888.xyz/2023/03/05/G7eNc.jpeg',
-				thumbnail: 'https://i.328888.xyz/2023/03/05/G7eNc.jpeg',
+				original: whale1,
+				thumbnail: whale1,
 			},
 			{
-				original: 'https://i.328888.xyz/2023/03/05/G7zhA.jpeg',
-				thumbnail: 'https://i.328888.xyz/2023/03/05/G7zhA.jpeg',
+				original: whale2,
+				thumbnail: whale2,
 			},
 			{
-				original: 'https://i.328888.xyz/2023/03/05/G7GHN.jpeg',
-				thumbnail: 'https://i.328888.xyz/2023/03/05/G7GHN.jpeg',
-			},
-			{
-				original: 'https://i.328888.xyz/2023/03/05/G7deV.jpeg',
-				thumbnail: 'https://i.328888.xyz/2023/03/05/G7deV.jpeg',
-			},
-			{
-				original: 'https://i.328888.xyz/2023/03/05/G7Skb.jpeg',
-				thumbnail: 'https://i.328888.xyz/2023/03/05/G7Skb.jpeg',
+				original: whale3,
+				thumbnail: whale3,
 			},
 		];
 

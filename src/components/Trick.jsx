@@ -3,6 +3,8 @@
 import React from 'react';
 import { Segment, Button } from 'semantic-ui-react';
 import parrot from '../images/parrot.gif';
+import CreateAccountTrick from './CreateAccountTrick';
+import Verifying from './Verifying';
 
 const Emoji = () => {
 	return (
@@ -54,6 +56,12 @@ const Emoji = () => {
 						Click Me!
 					</Button>
 				</div>
+			</Segment>
+			<Segment>
+				<CreateAccountTrick />
+			</Segment>
+			<Segment>
+				<Verifying />
 			</Segment>
 		</Segment.Group>
 	);

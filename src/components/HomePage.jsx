@@ -12,6 +12,7 @@ import Trick from './Trick';
 import DrawingPad from './DrawingPad';
 import WorldMap from './WorldMap';
 import Funny from './Funny';
+import RatingSample from './RatingSample';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -114,6 +115,14 @@ export default class HomePage extends Component {
 								<Icon name='chess queen' />
 								Trick
 							</Menu.Item>
+							<Menu.Item
+								color={'yellow'}
+								name='rating'
+								active={this.state.activeItem === 'rating'}
+								onClick={() => this.handleItemClick('rating')}>
+								<Icon name='star outline' />
+								Rating
+							</Menu.Item>
 						</Menu>
 					</Grid.Column>
 					<Grid.Column stretched width={14}>
@@ -128,6 +137,7 @@ export default class HomePage extends Component {
 						{/* {this.state.activeItem === 'map' && <WorldMap />} */}
 						{this.state.activeItem === 'funny' && <Funny />}
 						{this.state.activeItem === 'trick' && <Trick />}
+						{this.state.activeItem === 'rating' && <RatingSample />}
 						{/* </Segment> */}
 					</Grid.Column>
 				</Grid>
