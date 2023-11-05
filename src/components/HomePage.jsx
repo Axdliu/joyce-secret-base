@@ -13,6 +13,7 @@ import DrawingPad from './DrawingPad';
 import WorldMap from './WorldMap';
 import Funny from './Funny';
 import RatingSample from './RatingSample';
+import Comments from './Comments';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -123,6 +124,14 @@ export default class HomePage extends Component {
 								<Icon name='star outline' />
 								Rating
 							</Menu.Item>
+							<Menu.Item
+								color={'black'}
+								name='comments'
+								active={this.state.activeItem === 'comments'}
+								onClick={() => this.handleItemClick('comments')}>
+								<Icon name='keyboard' />
+								Comments
+							</Menu.Item>
 						</Menu>
 					</Grid.Column>
 					<Grid.Column stretched width={14}>
@@ -138,6 +147,7 @@ export default class HomePage extends Component {
 						{this.state.activeItem === 'funny' && <Funny />}
 						{this.state.activeItem === 'trick' && <Trick />}
 						{this.state.activeItem === 'rating' && <RatingSample />}
+						{this.state.activeItem === 'comments' && <Comments />}
 						{/* </Segment> */}
 					</Grid.Column>
 				</Grid>
