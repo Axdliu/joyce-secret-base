@@ -14,6 +14,7 @@ import WorldMap from './WorldMap';
 import Funny from './Funny';
 import RatingSample from './RatingSample';
 import Comments from './Comments';
+import Calculator from './Calculator';
 
 export default class HomePage extends Component {
 	state = { activeItem: 'riddle' };
@@ -132,6 +133,14 @@ export default class HomePage extends Component {
 								<Icon name='keyboard' />
 								Comments
 							</Menu.Item>
+							<Menu.Item
+								color={'blue'}
+								name='calculator'
+								active={this.state.activeItem === 'calculator'}
+								onClick={() => this.handleItemClick('calculator')}>
+								<Icon name='calculator' />
+								Calculator
+							</Menu.Item>
 						</Menu>
 					</Grid.Column>
 					<Grid.Column stretched width={14}>
@@ -148,6 +157,7 @@ export default class HomePage extends Component {
 						{this.state.activeItem === 'trick' && <Trick />}
 						{this.state.activeItem === 'rating' && <RatingSample />}
 						{this.state.activeItem === 'comments' && <Comments />}
+						{this.state.activeItem === 'calculator' && <Calculator />}
 						{/* </Segment> */}
 					</Grid.Column>
 				</Grid>
